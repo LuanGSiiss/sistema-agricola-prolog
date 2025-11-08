@@ -17,13 +17,12 @@ O sistema utiliza fatos e regras para inferir conclusões sobre o desempenho esp
 ## Estrutura do Projeto
 
 diagnostico_safra/
-│
-├── main.pl % Arquivo principal (menu e orquestração)
-├── kb.pl % Base de conhecimento (fatos, tabelas, domínios)
-├── rules.pl % Regras lógicas e inferências
-├── ui.pl % Interface textual (perguntas e coleta de dados)
-├── explain.pl % Geração de explicação e trilha de regras
-└── README.md
+- main.pl % Arquivo principal (menu e orquestração)
+- kb.pl % Base de conhecimento (fatos, tabelas, domínios)
+- rules.pl % Regras lógicas e inferências
+- ui.pl % Interface textual (perguntas e coleta de dados)
+- explain.pl % Geração de explicação e trilha de regras
+- README.md
 
 
 ---
