@@ -37,8 +37,7 @@ Abra o terminal na pasta do projeto e digite:
     swipl -s main.pl
 Ou acesse a consulta do SWI-Prolog abrindo o arquivo main.pl
 
-Exemplo de Execução
-
+#### Exemplo Entrada
 Cultura: soja
 Area cultivada: 10
 Rendimento esperado: 3.0
@@ -50,6 +49,31 @@ Seca: n
 Fertilizante suficiente: s
 Irrigacao: n
 Subsidio: n
+
+#### Exemplo Saída
+[Explicacao do Diagnostico]
+- Cultura: soja | Area (ha): 10
+- Rendimento esperado: 3.0 t/ha | Historico: 3.2 t/ha
+- Pragas: nao | Seca: nao | Fertilizante adequado: sim | Irrigacao: nao
+- Preco/ton: 2200 | Custo/ha: 1700
+
+Regras que foram acionadas:
+- reg_produto_media
+- reg_fin_viavel
+- reg_produto_media
+- reg_risco_incerto
+- reg_rec_avaliacao_generica
+Receita estimada por ha: 6600.00 BRL
+Lucro estimado por ha: 4900.00 BRL
+
+Resumo:
+- Produtividade avaliada como: media
+- Situacao financeira avaliada como: viavel
+- Nivel de risco da safra: incerto
+- Recomendacao sugerida: avaliacao_tecnica
+
+RESULTADO FINAL: diagnostico(produtividade(media),financeiro(viavel),risco(incerto),recomendacao(avaliacao_tecnica))
+
 
 ---
 
